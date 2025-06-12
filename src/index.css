@@ -1,0 +1,38 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  font-family: outfit;
+}
+
+/* body{
+  background-color: black;
+} */
+/* globals.css */
+
+/* body {
+  font-family: 'Outfit', 'Ovo', sans-serif;
+  line-height: 2rem; 
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+   background-color: #11001F; 
+  color: white;
+} */
+
+/* Optional utility classes if you want to apply fonts selectively */
+.dark{
+  background-color: #11001F;
+  color: white;
+}
+.outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.ovo {
+  font-family: 'Ovo', serif;
+}
+
+
+
