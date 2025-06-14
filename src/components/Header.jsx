@@ -1,13 +1,13 @@
 import { assets } from '../assets/assets';
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiHackerrank } from "react-icons/si";
-import { motion } from "framer-motion"; 
-
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+// import { SiHackerrank } from "react-icons/si";
+import { motion } from "framer-motion";
+import { FaSquareFacebook } from "react-icons/fa6";
 const Header = () => {
   return (
     <div className='w-11/12 max-w-5xl mx-auto min-h-screen flex flex-col items-center justify-center text-center px-4'>
-      
-   
+
+
       <motion.div
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
@@ -16,7 +16,7 @@ const Header = () => {
         <img src={assets.profile_img} alt='Profile' className='rounded-full w-24 sm:w-32' />
       </motion.div>
 
-    
+
       <motion.h3
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -27,7 +27,7 @@ const Header = () => {
         <img src={assets.hand_icon} alt='Wave' className='w-5 sm:w-6' />
       </motion.h3>
 
-     
+
       <motion.h1
         initial={{ y: -30, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -37,7 +37,7 @@ const Header = () => {
         Full Stack Developer
       </motion.h1>
 
-     
+
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -47,7 +47,7 @@ const Header = () => {
         I’m a passionate web developer skilled in building responsive, user-friendly websites using HTML, CSS, JavaScript, React, and Node.js. I focus on writing clean, optimized code to solve real-world problems and improve user experience.
       </motion.p>
 
-      
+
       <motion.div
         initial={{ x: 30, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
@@ -57,22 +57,36 @@ const Header = () => {
         <ul className="flex items-center gap-6 sm:gap-10 justify-center text-xl sm:text-2xl text-gray-700 dark:text-white">
           <li>
             <a href="https://github.com/Saheli17" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <div className="p-2 rounded-full border-2 border-black dark:border-white hover:border-pink-500 hover:text-pink-500 transition duration-300">
+              <div className="p-2 rounded-full border-2 border-black dark:border-white hover:border-pink-400 hover:text-pink-400 dark:hover:border-pink-500 dark:hover:text-pink-500 transition duration-300">
                 <FaGithub />
               </div>
             </a>
           </li>
           <li>
             <a href="https://linkedin.com/in/saheli-gayen-46b069333" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <div className="p-2 rounded-full border-2 border-black dark:border-white hover:border-pink-500 hover:text-pink-500 transition duration-300">
+              <div className="p-2 rounded-full border-2 border-black dark:border-white hover:border-pink-400 hover:text-pink-400 dark:hover:border-pink-500 dark:hover:text-pink-500 transition duration-300">
                 <FaLinkedin />
               </div>
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="https://www.hackerrank.com/profile/gayensaheli17" target="_blank" rel="noopener noreferrer" aria-label="HackerRank">
-              <div className="p-2 rounded-full border-2 border-black dark:border-white hover:border-pink-500 hover:text-pink-500 transition duration-300">
-                <SiHackerrank />
+              <div className="p-2 rounded-full border-2 border-black dark:border-white hover:border-pink-400 hover:text-pink-400 dark:hover:border-pink-500 dark:hover:text-pink-500 transition duration-300">
+                  <SiHackerrank />
+              </div>
+            </a>
+          </li> */}
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61573558538621" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <div className="p-2 rounded-full border-2 border-black dark:border-white hover:border-pink-400 hover:text-pink-400 dark:hover:border-pink-500 dark:hover:text-pink-500 transition duration-300">
+                <FaSquareFacebook />
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/saheli_1708" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <div className="p-2 rounded-full border-2 border-black dark:border-white hover:border-pink-400 hover:text-pink-400 dark:hover:border-pink-500 dark:hover:text-pink-500 transition duration-300">
+                <FaInstagram />
               </div>
             </a>
           </li>
