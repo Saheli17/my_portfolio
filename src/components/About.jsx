@@ -10,7 +10,7 @@ import {
   SiReact,
   SiNodedotjs
 } from "react-icons/si";
-
+import { RiTailwindCssFill } from "react-icons/ri";
 const About = ({ isDarkMode }) => {
   const [activeTab, setActiveTab] = useState("education");
 
@@ -52,6 +52,7 @@ const About = ({ isDarkMode }) => {
     { name: "CSS", icon: <SiCss3 /> },
     { name: "JavaScript", icon: <SiJavascript /> },
     { name: "React", icon: <SiReact /> },
+     { name: "Tailwind CSS", icon:<RiTailwindCssFill />},
     { name: "Node.js", icon: <SiNodedotjs /> },
     { name: "Python", icon: <SiPython /> },
   ];
