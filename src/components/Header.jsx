@@ -102,7 +102,10 @@ const Header = () => {
           className='px-8 py-2 sm:px-10 sm:py-3 border border-white rounded-full bg-black text-white dark:bg-transparent dark:text-white flex items-center gap-2 text-sm sm:text-base'
         >
           Contact me
-          <img src={assets.right_arrow_white} alt='Arrow' className='w-4' />
+          <motion.img 
+          whileHover={{ x: 5 }}
+          transition={{ duration: 0.3 }}
+          src={assets.right_arrow_white} alt='Arrow' className='w-4' />
         </motion.a>
 
         <motion.a
@@ -114,7 +117,10 @@ const Header = () => {
           className='px-8 py-2 sm:px-10 sm:py-3 border rounded-full border-gray-500 bg-white dark:text-black flex items-center gap-2 text-sm sm:text-base'
         >
           My resume
-          <img src={assets.download_icon} alt='Download' className='w-4' />
+          <motion.img 
+          whileHover={{ y: 5 }}
+          transition={{ duration: 0.3 }}
+          src={assets.download_icon} alt='Download' className='w-4' />
         </motion.a>
       </div>
     </div>
